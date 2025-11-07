@@ -10,19 +10,19 @@ It demonstrates precise control over file pointers, data offsets, and memory, re
 🧠 Key Skills Demonstrated
 
 Binary File Manipulation: Working directly with raw bytes and tag headers.
-
 Command-Line Interface Design: Robust parsing, validation, and error handling.
-
 Modular C Programming: Clean separation between reading, writing, and validation logic.
-
 System-Level Thinking: No external dependencies; fully portable and lightweight.
 
 🛠️ Tech Stack
 
 Language: C
-
 Libraries: Standard C (stdio.h, stdlib.h, string.h)
-
 Tools: GCC, Make, Git
-
 Platform: Linux / Unix (CLI-based)
+
+👩‍💻 Author
+Ananya Jayaprakash
+📂 GitHub
+🎓 B.Tech in Electrical & Electronics Engineering
+💡 Embedded Systems & Firmware Developer
