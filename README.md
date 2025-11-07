@@ -1,28 +1,85 @@
-🎧 MP3 Tag Editor & Viewer
+# 🎵 MP3 Tag Editor & Viewer (C Project)
 
-Command-line MP3 metadata editor built in C — demonstrates strong skills in file I/O, binary parsing, and low-level data handling, essential for embedded and systems programming.
+A **command-line utility** written in **C** to view and modify ID3 tags in MP3 files.  
+This project highlights proficiency in **file I/O**, **binary parsing**, and **modular program design** — core skills for systems, firmware, and embedded engineering.
 
-⚙️ Overview
+---
 
-This project reads and edits ID3 tags (Title, Artist, Album, Year, etc.) directly from MP3 files using only standard C libraries.
-It demonstrates precise control over file pointers, data offsets, and memory, reflecting disciplined firmware-style C coding.
+## 🧭 Overview
 
-🧠 Key Skills Demonstrated
+The MP3 Tag Editor provides a terminal-based interface for inspecting and updating **MP3 metadata**.  
+It works directly with the **binary structure of ID3v1 tags**, without any external dependencies.
 
-Binary File Manipulation: Working directly with raw bytes and tag headers.
-Command-Line Interface Design: Robust parsing, validation, and error handling.
-Modular C Programming: Clean separation between reading, writing, and validation logic.
-System-Level Thinking: No external dependencies; fully portable and lightweight.
+**Supported Metadata Fields**
+- Title  
+- Artist  
+- Album  
+- Year  
+- Genre  
+- Comment  
 
-🛠️ Tech Stack
+---
 
-Language: C
-Libraries: Standard C (stdio.h, stdlib.h, string.h)
-Tools: GCC, Make, Git
-Platform: Linux / Unix (CLI-based)
+## ✨ Features
 
-👩‍💻 Author
-Ananya Jayaprakash
-📂 GitHub
-🎓 B.Tech in Electrical & Electronics Engineering
-💡 Embedded Systems & Firmware Developer
+- 🔍 **Read Tags:** Extracts and displays MP3 metadata in a clean, readable format  
+- ✏️ **Edit Tags:** Update specific fields (e.g., title, artist) via simple CLI arguments  
+- 🧩 **Modular Architecture:** Separate modules for viewing, editing, and validation  
+- ⚙️ **Binary File Handling:** Reads and writes directly to ID3 tag blocks  
+- 🚫 **Error Management:** Detects missing files or invalid formats gracefully  
+
+---
+
+## 🛠️ Tech Stack
+
+| Category | Details |
+|-----------|----------|
+| **Language** | C |
+| **Libraries** | Standard C Libraries (`stdio.h`, `stdlib.h`, `string.h`) |
+| **Platform** | Linux / Unix |
+| **Tools** | GCC, Git, Command-Line Interface |
+
+---
+
+## 💻 Build Instructions
+
+### 1. Compile
+```bash
+gcc main.c view.c edit.c -o mp3tag
+```
+---
+
+## 🖥️ Run Instructions
+
+### 2. Run
+```bash
+./mp3tag [option] [arguments]
+```
+---
+
+### 🧪 Examples
+
+**View all tags**
+```bash
+./mp3tag -v song.mp3
+```
+---
+
+## 🧩 Supported Tag Codes
+
+| **Tag Code** | **Field Name**     | **Description**                              |
+|:-------------:|:-------------------|:---------------------------------------------|
+| **TIT2**      | Title              | The title or name of the track               |
+| **TPE1**      | Artist             | The artist or performer of the track         |
+| **TALB**      | Album              | The album or collection the track belongs to |
+| **TYER**      | Year               | The year the recording was released          |
+| **TCON**      | Genre              | The genre classification of the track        |
+| **COMM**      | Comment            | Additional notes or comments about the track |
+
+## 👩‍💻 Author
+
+**Ananya Jayaprakash**  
+🎓 *B.Tech in Electrical & Electronics Engineering*  
+💡 *Embedded Systems & Firmware Enthusiast*  
+📧 **Email:** [ananyajayaprakash00@gmail.com](mailto:ananyajayaprakash00@gmail.com)
+
