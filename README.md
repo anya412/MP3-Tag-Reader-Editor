@@ -61,7 +61,7 @@ gcc main.c view.c edit.c -o mp3tag
 
 **View all tags**
 ```bash
-./mp3tag -v song.mp3
+./mp3tag -v sample.mp3
 ```
 ---
 
